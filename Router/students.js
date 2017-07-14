@@ -7,9 +7,9 @@ var model = require('../models')
 
 
 router.get('/',function(req,res){
-  model.Subjects.findAll().then(data => {
+  model.Students.findAll().then(data => {
   // projects will be an array of all Project instances
-    res.render('subjects',{sbjdata : data})
+    res.render('students',{stddata : data})
   })
 })
 

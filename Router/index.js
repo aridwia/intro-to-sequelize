@@ -7,7 +7,7 @@ var router = express.Router();
 
 
 router.get('/',function(req,res){
-  res.send('main')
+  res.render('main',{})
 })
 
 

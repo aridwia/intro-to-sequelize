@@ -5,19 +5,19 @@
     <title>Teachers</title>
     <style>
       table, th, td {
-        border: 1px solid black;
+        border: 2px solid black;
       }
     </style>
   </head>
   <body>
 <h1> Data Teachers </h1>
-<table>
+<table style="width:50%">
   <tr>
-    <th>Nomor </th>
+    <th>No </th>
     <th>First Name </th>
     <th>Last Name </th>
-    <th>Created at </th>
-    <th>updated at</th>
+    <!-- <th>Created at </th>
+    <th>updated at</th> -->
     <th>Email</th>
   </tr>
 <% var i = 1 %>
@@ -26,8 +26,8 @@
     <td><%= i %> <% i+=1 %></td>
     <td><%= teacher.first_name %></td>
     <td><%= teacher.last_name %></td>
-    <td><%= teacher.createdAt %></td>
-    <td><%= teacher.updatedAt %></td>
+    <!-- <td><%= teacher.createdAt %></td>
+    <td><%= teacher.updatedAt %></td> -->
     <td><%= teacher.email %></td>
     </tr>
 <% }) %>

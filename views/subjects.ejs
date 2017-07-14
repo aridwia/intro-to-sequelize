@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Subjects</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+<h1> Data Subjects </h1>
+<table>
+  <tr>
+    <th>ID </th>
+    <th>Subject Name </th>
+  </tr>
+<% var i = 1 %>
+<% sbjdata.forEach(function(subject) { %>
+   <tr>
+    <td><%= subject.id %></td>
+    <td><%= subject.subject_name %></td>
+    </tr>
+<% }) %>
+</table>
+<br>
+<br>
+
+  </body>
+</html>
